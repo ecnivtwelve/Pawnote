@@ -48,7 +48,7 @@ export const createPronoteAPICall = async (
 
     return { payload, cookies };
   }
-  catch {
-    throw new PawnoteNetworkFail();
+  catch(e) {
+    throw new Error('PawnoteNetworkFail : ', e);
   }
 };

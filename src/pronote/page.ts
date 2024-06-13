@@ -28,7 +28,7 @@ export const downloadPronotePage = async (fetcher: PawnoteFetcher, options: {
     };
   }
   catch (error) {
-    throw new PawnoteNetworkFail();
+    throw new Error('PawnoteNetworkFail : ', e);
   }
 };
 
